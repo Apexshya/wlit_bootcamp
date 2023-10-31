@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="container">
+        <p>this is code</p>
+
+        
+    </div>
+    <input type="text" id="color"/>
+    <button id="button1"> Submit </button>
+
+
+
+    <script>
+;
+        const containerElement=document.getElementById("container")
+
+        const buttonElement=document.getElementById("button1");
+    buttonElement.addEventListener('click', function(){
+        const colorInput= document.getElementById('color');
+        containerElement.style.backgroundColor=colorInput.value;
+
+
+        
+    });
+
+
+
+
+    </script>
+
+
+    
+</body>
+</html>
