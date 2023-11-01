@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom events</title>
+</head>
+<body>
+    <div id="container">
+    <p>para1</p>
+    <p>para2</p>
+    <p>para3</p>
+    <p>para4</p>
+</div>
+<input id="fname"/>
+
+
+<button id="button1"> submit </button>
+
+
+<script>
+    const inputElement=document.getElementById("fname");
+    inputElement.addEventListener('keypress', function(event){
+        console.log('key pressed, event');
+    });
+
+
+
+
+
+
+    const containerElement=document.getElementById("container");
+    containerElement.addEventListener('mouseover', function(){
+console.log('mouse ghhover');
+
+
+    });
+
+    const buttonElement=document.getElementById("button1");
+    buttonElement.addEventListener('click', function(){
+        console.log('button clicked');
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+    
+</body>
+</html>
